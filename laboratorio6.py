@@ -1,7 +1,7 @@
 import serial
 import time
 
-arduino = serial.Serial('COM7', 9600)  # Ajusta el puerto COM según tu configuración
+arduino = serial.Serial('/dev/ttyACM0', 9600)
 
 while True:
     if arduino.readable():
